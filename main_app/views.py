@@ -1,5 +1,10 @@
 from django.shortcuts import render
 from django.contrib.auth.views import LoginView
+from django.contrib.auth import login
+from django.contrib.auth.forms import UserCreationForm
+from django.contrib.auth.decorators import login_required
+from django.contrib.auth.mixins import LoginRequiredMixin
+from .models import Glizzy
 
 # Create your views here.
 class Home(LoginView):
@@ -7,3 +12,7 @@ class Home(LoginView):
 
 def about(request):
   return render(request, 'about.html')
+
+def glizzy_index(request):
+  glizzys = Glizzy.objects.filter(user=request.user)
+  return render(request, 'glizzys/index.html', { 'glizzys': glizzys })
