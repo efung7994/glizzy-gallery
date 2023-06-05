@@ -4,9 +4,8 @@ from django.contrib.auth import login
 from django.contrib.auth.forms import UserCreationForm
 from django.contrib.auth.decorators import login_required
 from django.contrib.auth.mixins import LoginRequiredMixin
-from django.views.generic.edit import CreateView
+from django.views.generic.edit import CreateView, UpdateView, DeleteView
 from .models import Glizzy
-from django.urls import reverse
 
 # Create your views here.
 class Home(LoginView):
@@ -21,8 +20,14 @@ class GlizzyCreate(LoginRequiredMixin, CreateView):
     form.instance.user = self.request.user
     return super().form_valid(form)
   
-  def get_absolute_url(self):
-    return reverse('glizzy-detail', kwargs={'glizzy_id': self.id})
+
+class GlizzyUpdate(LoginRequiredMixin, UpdateView):
+  model = Glizzy
+  fields = ['toppings', 'description', 'price']
+
+class GlizzyDelete(LoginRequiredMixin, DeleteView):
+  model = Glizzy
+  success_url = '/glizzys/'
 
 def about(request):
   return render(request, 'about.html')

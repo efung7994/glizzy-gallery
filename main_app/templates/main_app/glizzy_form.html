@@ -8,8 +8,12 @@
 {% block content %}
 
 <div class="page-header">
-  <h1>Add a Glizzy</h1>
-  <img src="{% static 'images/nerd-cat.svg' %}" alt="A glizzy"/>
+  {% if glizzy %}
+    <h1>Edit {{ glizzy.name }}</h1>
+  {% else %}
+    <h1>Add a Glizzy</h1>
+  {% endif %}
+  <img src="{% static '' %}" alt="A glizzy"/>
 </div>
 <form action="" method="post" class="form-container">
   {% csrf_token %}
