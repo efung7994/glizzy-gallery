@@ -7,4 +7,5 @@ urlpatterns = [
   path('glizzys/', views.glizzy_index, name='glizzy-index'),
   path('glizzys/<int:glizzy_id>/', views.glizzy_detail, name='glizzy-detail'),
   path('glizzys/create/', views.GlizzyCreate.as_view(), name='glizzy-create'),
+  path('accounts/signup/', views.signup, name='signup'),
 ]
