@@ -9,3 +9,6 @@ class Glizzy(models.Model):
   description = models.TextField(max_length=250)
   price = models.IntegerField()
   user = models.ForeignKey(User, on_delete=models.CASCADE)
+
+  def __str__(self):
+    return self.name

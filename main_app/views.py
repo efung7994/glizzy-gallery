@@ -16,3 +16,7 @@ def about(request):
 def glizzy_index(request):
   glizzys = Glizzy.objects.filter(user=request.user)
   return render(request, 'glizzys/index.html', { 'glizzys': glizzys })
+
+def glizzy_detail(request, glizzy_id):
+  glizzy = Glizzy.objects.get(id=glizzy_id)
+  return render(request, 'glizzys/detail.html', { 'glizzy': glizzy })

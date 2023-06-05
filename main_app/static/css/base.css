@@ -8,6 +8,7 @@ body {
 header {
   width: 100%;
   background-color: lightcoral;
+  border-radius: 100px;
 }
 
 nav {

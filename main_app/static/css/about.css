@@ -1,0 +1,11 @@
+.about-header{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.dancing-glizzy{
+  width: 150px;
+  height: 100px;
+  margin-left: -40px;
+}

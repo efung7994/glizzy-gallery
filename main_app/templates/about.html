@@ -1,8 +1,21 @@
 {% extends 'base.html' %}
+{% load static %}
+
+
+{% block head %}
+<link rel="stylesheet" type="text/css" href="{% static 'css/about.css' %}"/>
+{% endblock %}
 
 {% block content %}
 
-<h1>About the Glizzy Gallery</h1>
+<section class="about-header">
+  <h1>About the Glizzy Gallery</h1>
+  <img 
+      class="dancing-glizzy"
+      src="{% static 'images/dancing-glizzy.gif' %}"
+      alt="Dancing Glizzy"
+  >
+</section>
 <hr />
 <p class="page-content">
   What is a Glizzy?

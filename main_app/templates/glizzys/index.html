@@ -1,0 +1,27 @@
+{% extends 'base.html' %}
+{% load static %}
+
+{% block head %}
+<link 
+  rel="stylesheet"
+  type="text/css"
+  href="{% static 'css/glizzys/glizzy-index.css' %}"
+/>
+{% endblock %}
+
+{% block content %}
+
+<section class="card-container">
+  {% for glizzy in glizzys %}
+    <div class="card">
+      <a href="{% url 'glizzy-detail' glizzy.id %}">
+        <div class="card-content">
+          <ol class="card-title">{{ glizzy.name }}</ol>
+          <p><small>{{ glizzy.description }}</small></p>
+        </div>
+      </a>
+    </div>
+  {% endfor %}
+</section>
+
+{% endblock %}
