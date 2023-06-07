@@ -48,7 +48,20 @@ td > textarea {
   font-family: inherit;
 }
 
-.btn {
+.btn-submit {
+  background-color: rgb(53, 196, 53);
+  padding: 8px 16px;
+  border-radius: 6px;
+  border-width: 2px;
+  border-style: solid;
+  text-decoration: none;
+  font-weight: 600;
+  cursor: pointer;
+  margin-right: 10px;
   align-self: flex-end;
   margin-right: 40px;
+}
+
+.btn-submit:hover {
+  background-color: rgb(3, 171, 3);
 }

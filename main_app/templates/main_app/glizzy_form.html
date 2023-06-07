@@ -11,16 +11,15 @@
     {% if glizzy %}
       <h1>Edit {{ glizzy.name }}</h1>
     {% else %}
-      <h1>Add a Glizzy</h1>
+      <h1>Add Glizzy</h1>
     {% endif %}
-    <img src="{% static '' %}" alt="A glizzy"/>
   </div>
   <form action="" method="post" class="form-container">
     {% csrf_token %}
     <table>
       {{ form.as_table }}
     </table>
-    <button type="submit" class="btn submit">Submit!</button>
+    <button type="submit" class="btn-submit">Submit!</button>
   </form>
 </div>
 
