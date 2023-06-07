@@ -9,7 +9,7 @@
   <link
     rel="shortcut icon"
     type="image/png"
-    href=""
+    href="{% static 'images/dancing-glizzy.gif' %}"
   >
   <title>Glizzy Gallery</title>
   <link rel="stylesheet" type="text/css" href="{% static 'css/base.css' %}">
@@ -30,7 +30,7 @@
       <ul>
         {% if user.is_authenticated %}
         <li><a href="{% url 'glizzy-index' %}">All Glizzies</a></li>
-        <li><a href="{% url 'glizzy-create' %}">Add a Glizzy</a></li>
+        <li><a href="{% url 'glizzy-create' %}">Add Glizzy</a></li>
         <li><a href="{% url 'about' %}">About</a></li>
         <li><a href="{% url 'logout' %}">Log out</a></li>
         {% else %}

@@ -5,6 +5,10 @@ body {
   align-items: center;
 }
 
+a {
+  text-underline-offset: 5px;
+}
+
 header {
   width: 100%;
   background-color: lightcoral;
