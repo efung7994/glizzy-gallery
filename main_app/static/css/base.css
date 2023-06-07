@@ -20,11 +20,13 @@ nav {
 }
 
 nav ul {
-  text-decoration: underline;
+  text-decoration: none;
   display: flex;
   align-items: center;
   justify-content: flex-end;
   flex-wrap: nowrap;
+  padding-right: 20px;
+  margin-top: -20px;
 }
 
 ul {
@@ -45,4 +47,18 @@ nav a:hover {
 
 nav li {
   padding: 5px 8px;
+}
+
+.glizzy-logo {
+  height: 50px;
+  width: 50px;
+  padding-top: 6px;
+  padding-left: 20px;
+}
+
+.header-logo-container {
+  /* visual fix to help align logo */
+  padding-top: 6px;
+  width: 256px;
+  height: 35px;
 }
