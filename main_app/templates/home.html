@@ -6,25 +6,23 @@
 {% endblock %}
 
 {% block content %}
-
-<section class="logo-container">
-  <div class="glizzy-container">
-    <img src="{% static 'images/header-logo.jpg' %}" alt="The Glizzy Gallery" />
-  </div>
-  <img 
-    src="{% static 'images/logotype.png' %}" 
-    alt="Text reads: Glizzy Gallery"
-  />
-</section>
-{% if not user.is_authenticated %}
-<section class="login-container">
-  <form action="{% url 'home' %}" method="post" class="login">
-    <h1>Login</h1>
-    {% csrf_token %}
-    {{ form.as_p }}
-    <input type="hidden" name="next" value="{{ next }}">
-    <button type="submit" class="btn submit">Login</button>
-  </form>
-</section>
+<div class="logo-login-container">
+  <section class="logo-container">
+    <img 
+      src="{% static 'images/glizzy-text-logo.png' %}" 
+      alt="Text reads: Glizzy Gallery"
+    />
+  </section>
+  {% if not user.is_authenticated %}
+  <section class="login-container">
+    <form action="{% url 'home' %}" method="post" class="login">
+      <h1>Login</h1>
+      {% csrf_token %}
+      {{ form.as_p }}
+      <input type="hidden" name="next" value="{{ next }}">
+      <button type="submit" class="btn submit">Login</button>
+    </form>
+  </section>
+</div>
 {% endif %}
 {% endblock %}

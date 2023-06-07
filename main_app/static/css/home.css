@@ -6,9 +6,17 @@ body{
   background-size: cover;
 }
 
+.logo-login-container{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
 .login-container{
   background-color: blue;
   padding: 20px;
+  width: 300px;
 }
 
 .login {
@@ -16,7 +24,6 @@ body{
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  width: 80%;
 }
 
 .login h1 {

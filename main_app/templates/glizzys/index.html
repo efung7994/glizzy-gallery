@@ -12,12 +12,19 @@
 {% block content %}
 
 <section class="card-container">
+  <div class="menu-heading">
+    <h1>Menu</h1>
+  </div>
   {% for glizzy in glizzys %}
     <div class="card">
       <a href="{% url 'glizzy-detail' glizzy.id %}">
         <div class="card-content">
-          <ol class="card-title">{{ glizzy.name }}</ol>
-          <p><small>{{ glizzy.description }}</small></p>
+          <div class="item">
+            <ul type="1" class="card-title">{{ glizzy.name }}</ul>
+            <p>&nbsp............................&nbsp</p>
+            <p>${{ glizzy.price }}</p>
+          </div>
+          <p class="description"><small>{{ glizzy.description }}</small></p>
         </div>
       </a>
     </div>
