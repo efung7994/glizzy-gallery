@@ -16,7 +16,7 @@ Click [here](https://github.com/efung7994/glizzy-gallery) to go to the github!
 
 
 # Background
-Glizzy Gallery is a website to create your very own glizzy! What is a glizzy? It's another word for hot dog! This site uses python and django along with other technoligies to create a simple CRUD app.
+Glizzy Gallery is a website to create your very own glizzy! What is a glizzy? It's another word for a hot dog! This site uses Python and Django along with other technologies to create a simple CRUD app.
 
   
 
@@ -43,5 +43,5 @@ Glizzy Gallery is a website to create your very own glizzy! What is a glizzy? It
 # Next Steps
 
 - [ ] Create a model for toppings
-- [ ] Allow users to share their glizzies with each other
-- [ ] Store created toppings in database so that they can be added by any user
+- [ ] Allow users to share their glizzies
+- [ ] Record created toppings in the database so that they can be added by any user
