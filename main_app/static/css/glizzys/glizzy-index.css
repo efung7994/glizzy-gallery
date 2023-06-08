@@ -15,9 +15,19 @@ body{
   color: blue;
 }
 
+
+.item:after {
+  content: " .......................................... ";
+    position: absolute;
+    margin-left: 150px;
+    width: 100px;
+    margin-right: 5px;
+}
+
 .menu-content {
   display: flex;
   flex-direction: column;
+  justify-content: space-between;
 }
 
 .menu-container {
@@ -28,7 +38,7 @@ body{
   background-image: url(../../images/menu.jpg);
   background-size: cover;
   margin-top: 20px;
-  width: 500px;
+  width: 550px;
   min-height: 400px;
 }
 
@@ -39,14 +49,21 @@ body{
 
 .item{
   display: flex;
-  justify-content: center;
+  justify-content: space-between;
   align-items: center;
   padding: 20px;
   margin-bottom: -50px;
+  margin-left: 40px;
+  max-width: 400px;
 }
 
 .description{
-  padding-left: 100px;
+  padding-left: 90px;
   max-width: 300px;
 }
 
+
+.link-tag{
+  margin-left: 20px;
+  max-width: 130px;
+}

@@ -19,10 +19,9 @@
     <div class="card">
       <div class="menu-content">
         <div class="item">
-          <a href="{% url 'glizzy-detail' glizzy.id %}">
+          <a href="{% url 'glizzy-detail' glizzy.id %}" class="link-tag">
             <h3 class="menu-title">{{ glizzy.name }}</h3>
           </a>
-          <h3>&nbsp............................&nbsp</h3>
           <h3>${{ glizzy.price }}</h3>
         </div>
         <p class="description"><small>{{ glizzy.description }}</small></p>
