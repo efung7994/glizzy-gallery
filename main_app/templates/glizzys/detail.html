@@ -17,10 +17,13 @@
     <h2>${{ glizzy.price }}</h2>
     <p>Toppings: {{ glizzy.toppings }}</p>
     <p>Description: {{ glizzy.description }}</p>
+
+  {% if user == glizzy.user %}
     <div class="glizzy-actions">
       <a href="{% url 'glizzy-update' glizzy.id %}" class="btn-warn">Edit</a>
       <a href="{% url 'glizzy-delete' glizzy.id %}" class="btn-danger">Delete</a>
     </div>
+  {% endif %}
   </div>
 </section>
 

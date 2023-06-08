@@ -6,6 +6,8 @@ from django.contrib.auth.decorators import login_required
 from django.contrib.auth.mixins import LoginRequiredMixin
 from django.views.generic.edit import CreateView, UpdateView, DeleteView
 from .models import Glizzy
+from django.views import View
+from django.http import Http404, HttpResponseForbidden
 
 # Create your views here.
 class Home(LoginView):
@@ -37,6 +39,7 @@ def about(request):
 def glizzy_index(request):
   glizzys = Glizzy.objects.filter(user=request.user)
   return render(request, 'glizzys/index.html', { 'glizzys': glizzys })
+
 
 @login_required
 def glizzy_detail(request, glizzy_id):

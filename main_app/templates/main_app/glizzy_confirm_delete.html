@@ -24,7 +24,9 @@
     >
       Cancel
     </a>
+    {% if user == glizzy.user %}
     <button type="submit" class="btn-danger">Delete!</button>
+    {% endif %}
   </form>
 </div>
 {% endblock %}
