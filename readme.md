@@ -10,77 +10,38 @@
 
   
 
-Click [here](https://shapeshift-peds.netlify.app/) to go to the app!
+Click [here](https://glizzy-gallery.fly.dev/) to go to the app!
 
-Click [here](https://trello.com/b/FlVCz559/shapeshift) to check out the Trello!
-
-Click [here](https://github.com/PeterLucido/SHAPESHIFT-back-end) to check out the backend repo!
-
-# Contributors
-
-[Peter Lucido](https://github.com/PeterLucido)
-
-[Eugene Fung](https://github.com/efung7994)
-
-[Dawson Myers](https://github.com/dawson120)
-
-[Stephen Im](https://github.com/stevim)
+Click [here](https://github.com/efung7994/glizzy-gallery) to go to the github!
 
 
 # Background
-ShapeShift is a user-friendly app designed to simplify the management of your overall well-being by tracking sleep, food intake, and exercise. With its easy-to-use interface and advanced technology, ShapeShift provides you with personalized data on your health and wellness. Discover a healthier, more balanced lifestyle by monitoring your progress with ShapeShift as your ultimate health companion.
+Glizzy Gallery is a website to create your very own glizzy! What is a glizzy? It's another word for hot dog! This site uses python and django along with other technoligies to create a simple CRUD app.
 
   
 
 # Technologies Used
 
-  
-
-- Node.js
-
-- Express
-
-- MongoDB
-
-- Mongoose
-
-- Javascript
-
-- React
-
+- Python
+- Django
+- PostgreSQL
+- HTML
 - CSS
-
 - Git
-
+- Dockerfile
 - Fly.io
-
-- Netlify
-
-- Cloudinary
-- Postman
-- JWT Auth
-
-  
+- Bit.io
 
 # Attributions
 
-[Landing Page Stock Photos](https://www.pexels.com/)
+[Stock Photos](https://www.freepik.com/)
 
-[Other Stock Photos](https://elements.envato.com/)
-
-[Inspirational Quotes API](https://forum.freecodecamp.org/t/free-api-inspirational-quotes-json-with-code-examples/311373)
+[CSS Box Shadows](https://getcssscan.com/css-box-shadow-examples)
 
   
 
 # Next Steps
 
-- [x] Show a different motivational quote every time a user navigates to or refreshes the page
-- [x] Render a user's profile photo in the navigation bar
-
-- [ ] See an empty card for any missed days 
-
-- [ ] Functionality to search for foods in a search bar instead of having a user input their meals
-
-- [ ] Mobile-friendly view
-
-- [ ] Add function to track calories automatically when food is input into the meals category
+- [ ] Create a model for toppings
+- [ ] Allow users to share their glizzies with each other
+- [ ] Store created toppings in database so that they can be added by any user
