@@ -59,7 +59,6 @@ nav li {
 }
 
 .header-logo-container {
-  /* visual fix to help align logo */
   padding-top: 6px;
   width: 256px;
   height: 35px;
@@ -78,5 +77,22 @@ nav li {
 
 .btn:hover {
   background-color: rgb(195, 191, 191)
+}
+
+.btn-danger {
+  color: black;
+  background-color: rgb(252, 40, 40);
+  padding: 8px 16px;
+  border-radius: 6px;
+  border-width: 2px;
+  border-style: solid;
+  text-decoration: none;
+  font-weight: 600;
+  cursor: pointer;
+  margin-right: 10px;
+}
+
+.btn-danger:hover {
+  background-color: rgb(221, 19, 19);
 }
 

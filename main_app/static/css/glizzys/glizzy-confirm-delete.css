@@ -1,0 +1,17 @@
+body {
+  background-image: url(../../images/trash.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.confirm-container {
+  border-style: solid;
+  padding: 20px;
+  margin-top: 20px;
+  border-radius: 10px;
+  background-color: white;
+}
+
+.btn-danger {
+  padding: 10px 16px;
+}

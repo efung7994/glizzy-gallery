@@ -1,22 +1,30 @@
 {% extends 'base.html' %}
 {% load static %}
 
+{% block head %}
+<link 
+  rel="stylesheet" 
+  type="text/css" 
+  href="{% static 'css/glizzys/glizzy-confirm-delete.css' %}"
+/>
+{% endblock %}
+
 {% block content %}
+<div class="confirm-container">
+  <div class="page-header">
+    <h1>Delete Glizzy?</h1>
+  </div>
+  <h2>Are you sure you want to delete {{ glizzy.name }}?</h2>
 
-<div class="page-header">
-  <h1>Delete Glizzy?</h1>
+  <form action="" method="post" class="form">
+    {% csrf_token %}
+    <a 
+      href="{% url 'glizzy-detail' glizzy.id %}" 
+      class="btn"
+    >
+      Cancel
+    </a>
+    <button type="submit" class="btn-danger">Delete!</button>
+  </form>
 </div>
-<h2>Are you sure you want to delete {{ glizzy.name }}?</h2>
-
-<form action="" method="post" class="form">
-  {% csrf_token %}
-  <a 
-    href="{% url 'glizzy-detail' glizzy.id %}" 
-    class="btn secondary"
-  >
-    Cancel
-  </a>
-  <button type="submit" class="btn danger">Yes - Delete!</button>
-</form>
-
 {% endblock %}

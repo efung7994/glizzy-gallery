@@ -1,0 +1,37 @@
+body {
+  background-image: url(../../images/make-glizzy.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+
+.glizzy-container {
+  border-style: solid;
+  padding: 20px;
+  margin-top: 20px;
+  border-radius: 10px;
+  background-color: white;
+}
+
+.glizzy-actions {
+  padding-top: 20px;
+}
+
+.btn-warn {
+  color: black;
+  background-color: rgb(53, 196, 53);
+  padding: 8px 16px;
+  border-radius: 6px;
+  border-width: 2px;
+  border-style: solid;
+  text-decoration: none;
+  font-weight: 600;
+  cursor: pointer;
+  margin-right: 10px;
+  align-self: flex-end;
+  margin-right: 40px;
+}
+
+.btn-warn:hover {
+  background-color: rgb(3, 171, 3);
+}
