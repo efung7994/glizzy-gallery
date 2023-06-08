@@ -1,3 +1,10 @@
+body {
+  background-image: url(../images/make-glizzy.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+
 .about-header{
   display: flex;
   justify-content: center;
@@ -13,4 +20,12 @@
 .page-content {
   display: flex;
   flex-direction: column;
+}
+
+.about-container {
+  border-style: solid;
+  border-radius: 10px;
+  background-color: white;
+  padding: 20px;
+  margin-top: 20px;
 }
