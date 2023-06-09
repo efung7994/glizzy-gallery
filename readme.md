@@ -12,8 +12,6 @@
 
 Click [here](https://glizzy-gallery.fly.dev/) to go to the app!
 
-Click [here](https://github.com/efung7994/glizzy-gallery) to go to the github!
-
 
 # Background
 Glizzy Gallery is a website to create your very own glizzy! What is a glizzy? It's another word for a hot dog! This site uses Python and Django along with other technologies to create a simple CRUD app.
@@ -34,7 +32,9 @@ Glizzy Gallery is a website to create your very own glizzy! What is a glizzy? It
 
 # Attributions
 
-[Stock Photos](https://www.freepik.com/)
+[Background Pictures](https://www.freepik.com/)
+
+[Logo Text](https://flamingtext.com/)
 
 [CSS Box Shadows](https://getcssscan.com/css-box-shadow-examples)
 
